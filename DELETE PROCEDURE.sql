@@ -1,0 +1,5 @@
+CREATE PROC DELETEDONOR
+@Did int
+AS 
+    DELETE FROM newDonor
+	WHERE Did = @Did

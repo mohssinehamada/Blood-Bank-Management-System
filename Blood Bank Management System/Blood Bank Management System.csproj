@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A7BE8E4-7C48-4EA4-B6C5-B319E85B3A5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Blood_Bank_Management_System</RootNamespace>
+    <AssemblyName>Blood Bank Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD NEW Donor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD NEW Donor.Designer.cs">
+      <DependentUpon>ADD NEW Donor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addpatient.Designer.cs">
+      <DependentUpon>Addpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlog.Designer.cs">
+      <DependentUpon>adminlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bloodtrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bloodtrans.Designer.cs">
+      <DependentUpon>Bloodtrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="d info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d info.Designer.cs">
+      <DependentUpon>d info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashbord.Designer.cs">
+      <DependentUpon>Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donate.Designer.cs">
+      <DependentUpon>Donate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="LINQ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LINQ.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Patientdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patientdetails.Designer.cs">
+      <DependentUpon>Patientdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashscreen.Designer.cs">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stats.Designer.cs">
+      <DependentUpon>stats.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD NEW Donor.resx">
+      <DependentUpon>ADD NEW Donor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addpatient.resx">
+      <DependentUpon>Addpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlog.resx">
+      <DependentUpon>adminlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bloodtrans.resx">
+      <DependentUpon>Bloodtrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d info.resx">
+      <DependentUpon>d info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbord.resx">
+      <DependentUpon>Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donate.resx">
+      <DependentUpon>Donate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patientdetails.resx">
+      <DependentUpon>Patientdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stats.resx">
+      <DependentUpon>stats.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LINQ.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LINQ.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LINQ.dbml.layout">
+      <DependentUpon>LINQ.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mains-adulte-enfant-tenant-coeur-rouge-fond-aqua_49149-908.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+    <None Include="Resources\b6b9367e132a8820c504e4d617da3583.jpg" />
+    <None Include="Resources\blood-donations.png" />
+    <None Include="Resources\Screen-Shot-2018-05-31-at-11.09.16-PM.png" />
+    <None Include="Resources\blog-4.png" />
+    <None Include="Resources\0_WzVRQs214b7TgyJX.gif" />
+    <None Include="Resources\0_3IFEy-hfoIpgFjBl.gif" />
+    <None Include="Resources\loader_ajax-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welfare_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-blood-donors-logo-symbol-icon-for-your-needs-png-image_4964110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mains-tenant-famille-papier_49149-1442.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6262.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_off_button_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_off_button_64px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compress_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize-Window-icon_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62611.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62613.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-plus-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_up_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-être-malade-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-seringue-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sélectionner-les-utilisateurs-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-don-de-sang-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-échantillon-de-sang-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rapport-statistique-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood-donation-1497514081.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

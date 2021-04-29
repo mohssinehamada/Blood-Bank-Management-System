@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bloodbank" Class="LINQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-9O107CL\SQLEXPRESS;Initial Catalog=bloodbank;Integrated Security=True" SettingsObjectName="Blood_Bank_Management_System.Properties.Settings" SettingsPropertyName="bloodbankConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.bloodtransfer" Member="bloodtransfers">
+    <Type Name="bloodtransfer">
+      <Column Name="Bgroup" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Bstock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.signin" Member="signins">
+    <Type Name="signin">
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SPassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.patient" Member="patients">
+    <Type Name="patient">
+      <Column Name="Pnum" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PAge" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pphone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pgender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Pbgroupe" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Padress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pcity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transfer" Member="Transfers">
+    <Type Name="Transfer">
+      <Column Name="Tnum" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Bgroup" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.newDonor" Member="newDonors">
+    <Type Name="newDonor">
+      <Column Name="Did" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Dname" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Dage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dmobile" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Dgender" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Dbgroup" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Daddress" Type="System.String" DbType="VarChar(550)" CanBeNull="true" />
+      <Column Name="Dcity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
